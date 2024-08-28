@@ -1,0 +1,130 @@
+body {
+    background-image: url("todo.jpg");
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2, label, p {
+    color: #292727;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+button {
+    background: #2a3f4c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #b2424a;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: -30px;
+}
+
+#weather-info {
+    font-size: 20px;
+}
+
+#weather-icon {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 10px; 
+    margin-bottom: 0;
+    display: none;
+}
+
+#hourly-forecast {
+    margin-top: 50px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    scroll-behavior: smooth; /* Smooth scrolling */
+    background: linear-gradient(to right, rgba(42, 63, 76, 0.8), rgba(178, 66, 74, 0.8)); /* Gradient background */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Custom scrollbar for hourly forecast */
+#hourly-forecast::-webkit-scrollbar {
+    height: 8px; /* Adjust scrollbar height */
+}
+
+#hourly-forecast::-webkit-scrollbar-thumb {
+    background-color: #b2424a; /* Thumb color */
+    border-radius: 10px;
+    border: 2px solid #2a3f4c; /* Optional: add border for thumb */
+}
+
+#hourly-forecast::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2); /* Track color */
+    border-radius: 10px;
+}
+
+/* Hourly item styling */
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add some shadow */
+    transition: transform 0.2s ease-in-out; /* Smooth scale transition */
+}
+
+.hourly-item:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.hourly-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+/* Hourly forecast heading */
+#hourly-heading {
+    color: #fff;
+    margin-top: 10px;
+}
