@@ -3,16 +3,16 @@ body {
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    align-items: right;
+    align-items: center;
     justify-content: center;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
 }
 
+/* Weather container styling */
 #weather-container {
     background: rgba(255, 255, 255, 0.3);
-    max-width: 400px;
+    max-width: 90%; /* Change from fixed to relative width */
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
@@ -21,20 +21,24 @@ body {
     text-align: center;
 }
 
+/* Typography */
 h2, label, p {
     color: #292727;
     margin: 8px 0;
 }
 
+/* Input field styling */
 input {
-    width: calc(100% - 16px);
-    padding: 8px;
+    width: 100%; /* Full width within container */
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid white;
     margin-top: 20px;
+    font-size: 1rem; /* Responsive font size */
 }
 
+/* Button styling */
 button {
     background: #2a3f4c;
     color: white;
@@ -43,33 +47,37 @@ button {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 20px;
-    width: 100px;
-    font-size: 15px;
+    width: 100%; /* Full width within container */
+    font-size: 1rem; /* Responsive font size */
 }
 
 button:hover {
     background: #b2424a;
 }
 
+/* Temperature styling */
 #temp-div p {
-    font-size: 60px;
-    margin-top: -30px;
+    font-size: 3rem; /* Responsive font size */
+    margin-top: -10px;
 }
 
+/* Weather information styling */
 #weather-info {
-    font-size: 20px;
+    font-size: 1.2rem; /* Responsive font size */
 }
 
+/* Weather icon styling */
 #weather-icon {
-    width: 200px;
-    height: 200px;
+    width: 50%; /* Relative to container width */
+    height: auto; /* Maintain aspect ratio */
     margin: 0 auto 10px; 
     margin-bottom: 0;
     display: none;
 }
 
+/* Hourly forecast styling */
 #hourly-forecast {
-    margin-top: 50px;
+    margin-top: 30px;
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
@@ -101,7 +109,7 @@ button:hover {
 /* Hourly item styling */
 .hourly-item {
     flex: 0 0 auto;
-    width: 80px;
+    width: 70px; /* Reduced width for better fit */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,13 +127,46 @@ button:hover {
 }
 
 .hourly-item img {
-    width: 30px;
-    height: 30px;
+    width: 25px; /* Responsive size */
+    height: auto; /* Maintain aspect ratio */
     margin-bottom: 5px;
 }
 
-/* Hourly forecast heading */
-#hourly-heading {
-    color: #fff;
-    margin-top: 10px;
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    #weather-container {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    #temp-div p {
+        font-size: 2.5rem;
+    }
+
+    #weather-info {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    #hourly-forecast {
+        padding: 8px;
+        margin-top: 20px;
+    }
+
+    .hourly-item {
+        width: 60px;
+    }
 }
