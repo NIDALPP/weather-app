@@ -3,7 +3,7 @@ body {
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    align-items: center;
+    align-items: right;
     justify-content: center;
     height: 100vh;
     margin: 0;
