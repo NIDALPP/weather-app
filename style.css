@@ -132,40 +132,32 @@ button:hover {
     margin-bottom: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #weather-container {
-        max-width: 95%;
+        max-width: 90%;
         padding: 15px;
     }
 
-    h2 {
-        font-size: 1.5rem;
-    }
-
     #temp-div p {
-        font-size: 2.5rem;
-    }
-
-    #weather-info {
-        font-size: 1rem;
-    }
-
-    button {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-
-    input {
-        font-size: 0.9rem;
-        padding: 8px;
-    }
-
-    #hourly-forecast {
-        padding: 8px;
-        margin-top: 20px;
+        font-size: 40px;
     }
 
     .hourly-item {
         width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    #temp-div p {
+        font-size: 30px;
+    }
+
+    #weather-icon {
+        width: 150px;
+        height: 150px;
     }
 }
