@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-/* Weather container styling */
+
 #weather-container {
     background: rgba(255, 255, 255, 0.3);
     max-width: 90%; /* Change from fixed to relative width */
@@ -21,24 +21,24 @@ body {
     text-align: center;
 }
 
-/* Typography */
+
 h2, label, p {
     color: #292727;
     margin: 8px 0;
 }
 
-/* Input field styling */
+
 input {
-    width: 100%; /* Full width within container */
+    width: 100%; 
     padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid white;
     margin-top: 20px;
-    font-size: 1rem; /* Responsive font size */
+    font-size: 1rem; 
 }
 
-/* Button styling */
+
 button {
     background: #2a3f4c;
     color: white;
@@ -47,35 +47,35 @@ button {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 20px;
-    width: 100%; /* Full width within container */
-    font-size: 1rem; /* Responsive font size */
+    width: 100%; 
+    font-size: 1rem; 
 }
 
 button:hover {
     background: #b2424a;
 }
 
-/* Temperature styling */
+
 #temp-div p {
-    font-size: 3rem; /* Responsive font size */
+    font-size: 3rem; 
     margin-top: -10px;
 }
 
-/* Weather information styling */
+
 #weather-info {
-    font-size: 1.2rem; /* Responsive font size */
+    font-size: 1.2rem;
 }
 
-/* Weather icon styling */
+
 #weather-icon {
-    width: 50%; /* Relative to container width */
-    height: auto; /* Maintain aspect ratio */
+    width: 50%; 
+    height: auto; 
     margin: 0 auto 10px; 
     margin-bottom: 0;
     display: none;
 }
 
-/* Hourly forecast styling */
+
 #hourly-forecast {
     margin-top: 30px;
     overflow-x: auto;
@@ -84,32 +84,31 @@ button:hover {
     justify-content: space-between;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    scroll-behavior: smooth; /* Smooth scrolling */
+    scroll-behavior: smooth; 
     background: linear-gradient(to right, rgba(42, 63, 76, 0.8), rgba(178, 66, 74, 0.8)); /* Gradient background */
     border-radius: 10px;
     padding: 10px;
 }
 
-/* Custom scrollbar for hourly forecast */
+
 #hourly-forecast::-webkit-scrollbar {
-    height: 8px; /* Adjust scrollbar height */
+    height: 8px; 
 }
 
 #hourly-forecast::-webkit-scrollbar-thumb {
-    background-color: #b2424a; /* Thumb color */
+    background-color: #b2424a; 
     border-radius: 10px;
-    border: 2px solid #2a3f4c; /* Optional: add border for thumb */
+    border: 2px solid #2a3f4c; 
 }
 
 #hourly-forecast::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.2); /* Track color */
+    background: rgba(255, 255, 255, 0.2); 
     border-radius: 10px;
 }
 
-/* Hourly item styling */
 .hourly-item {
     flex: 0 0 auto;
-    width: 70px; /* Reduced width for better fit */
+    width: 70px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,16 +122,15 @@ button:hover {
 }
 
 .hourly-item:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1); 
 }
 
 .hourly-item img {
-    width: 25px; /* Responsive size */
-    height: auto; /* Maintain aspect ratio */
+    width: 25px; 
+    height: auto; 
     margin-bottom: 5px;
 }
 
-/* Media Queries for smaller screens */
 @media (max-width: 600px) {
     #weather-container {
         max-width: 95%;
